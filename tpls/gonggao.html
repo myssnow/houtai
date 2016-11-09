@@ -1,0 +1,25 @@
+<div class="gonggao" ng-controller="gonggaoController">
+      <table>
+        <tr class="top">
+          <td>
+            <input type="checkbox" name="name" value="">
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+        
+        </tr>
+        <tr ng-repeat="xiaoxi in xiaoxi">
+          <td><input type="checkbox" name="name" value=""></td>
+          <td>{{xiaoxi.mingcheng}}</td>
+          <td>{{xiaoxi.beizhu}}</td>
+          <td></td>
+        </tr>
+      </table>
+</div>

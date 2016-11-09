@@ -1,0 +1,28 @@
+.xinxi{
+  width: 100%;
+  height: 100%;
+}
+.xinxi table{
+  width: 100%;
+}
+.xinxi  table td{
+  text-align: center;
+}
+.xinxi  table .top{
+  width: 100%;
+  height: 25px;
+  background: url(/img/mian_b_gj_46.gif) repeat-x;
+}
+.xinxi  table .top td{
+  color: #404040;
+  line-height: 25px;
+  border: 1px solid #dfe2e6;
+  text-align: center;
+}
+.xinxi  table .top td span{
+  width: 10px;
+  height: 10px;
+  float: right;
+  margin:3px 5px 0 0;
+  background: url(/img/icon_01.gif)0 -233px no-repeat;
+}

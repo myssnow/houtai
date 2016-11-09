@@ -1,0 +1,48 @@
+<div class="xinxi">
+      <table>
+        <tr class="top">
+          <td>
+            <input type="checkbox" name="name" value="">
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+          <td>工号
+          <span></span>
+          </td>
+        </tr>
+        <tr ng-repeat="person in person | filter:name">
+          <td><input type="checkbox" name="name" value=""></td>
+          <td>{{person.gonghao}}</td>
+          <td>{{person.name}}</td>
+          <td>{{person.sex}}</td>
+          <td>{{person.zhiwei}}</td>
+          <td>{{person.phone}}</td>
+          <td>{{person.bumen}}</td>
+          <td>{{person.ruzhi | date:'yyyy-MM-dd'}}</td>
+          <td>{{person.zhuangtai}}</td>
+          <td></td>
+        </tr>
+      </table>
+</div>

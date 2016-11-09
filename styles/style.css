@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #f2f2f2;
+}
+.containers{
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+header{
+  width: 100%;
+  height: 52px;
+  overflow: hidden;
+}
+.header{
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background: url(/img/header_bj_02.gif) left top repeat-x;
+}
+.log{
+  margin: 5px 0 0 31px;
+  float:left;
+}
+.right0{
+  float: right;
+  margin: 5px 20px 0 0 ;
+  width: 40px;
+  height: 40px;
+
+  border: solid 4px #ccc;
+}
+.right1{
+  float: right;
+  margin: 20px 85px 0 0;
+  line-height: 20px;
+  font-size: 12px;
+  color:#3f3f3f;
+}
+.right1 span{
+  font-weight: bolder;
+}
+section{
+  width: 100%;
+
+  /*overflow: hidden;*/
+}
+section .left{
+  width: 192px;
+  height: 671px;
+  float: left;
+  padding-right: 12px;
+  background: url(/img/lift_bj_02.gif) repeat-y;
+}
+section .left ul{
+  width:100%;
+}
+section .left ul li {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: url(/img/lift_li_bj_02.gif);
+}
+section .left ul li a{
+  width: 100%;
+  height: 40px;
+  display: block;
+  padding-left: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+section .left ul li a p{
+  width:100%;
+  line-height: 40px;
+  font-size: 12px;
+  padding-left: 40px;
+  background: url(/img/icon_lift.gif)0 0px no-repeat;
+  font-weight: bold;
+}
+section .right{
+overflow: hidden;
+margin-left: 25px;
+}
+section .right .help{
+  width: 168px;
+  height: 25px;
+  float:right;
+  margin-right: 15px;
+}
+section .right .help .helpcenter{
+  float: left;
+  width: 84px;
+  height: 25px;
+}
+section .right .help .exit{
+  float: right;
+  width: 84px;
+  height: 25px;
+}

@@ -1,0 +1,76 @@
+<div class="xingzheng-container" ng-controller="xingzhengController">
+  <div class="xingzheng-nav">
+    <ul class="nav nav-pills" role="tablist">
+    <li role="presentation">
+    <a ui-sref="home.xingzheng.xinxi">人员信息</a>
+    </li>
+    <li role="presentation">
+    <a href="#">招聘申请</a>
+    </li>
+    <li role="presentation">
+    <a href="#">只为调整申请</a>
+    </li>
+    <li role="presentation">
+    <a href="#">离职申请</a>
+    </li>
+    <li role="presentation">
+    <a href="#">培训申请</a>
+    </li>
+    <li role="presentation">
+    <a href="#">公文审批</a>
+    </li>
+  </ul>
+  </div>
+  <div class="xingzheng-search">
+    <div class="add">
+      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加</button>
+    </div>
+    <div class="del">
+      <a href="#"></a>
+    </div>
+    <div class="search-text" >
+      <input type="text" ng-model="sou">
+    </div>
+
+    <a class="search-button" ng-click="search()">
+    </a>
+  </div>
+    <ui-view></ui-view>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+            <h4 class="modal-title" id="myModalLabel">添加</h4>
+          </div>
+          <div class="modal-body">
+
+            <ul>
+              <li>
+                <input type="text" ng-model="name" name="name" value="" placeholder="姓名">
+              </li>
+              <li>
+                <input type="text" ng-model="sex" value="" placeholder="性别">
+              </li>
+              <li>
+                <input type="text" ng-model="zhiwei" value="" placeholder="职位">
+              </li>
+              <li>
+                <input type="text" ng-model="phone" value="" placeholder="手机">
+              </li>
+              <li>
+                <input type="text" ng-model="bumen" value="" placeholder="部门">
+              </li>
+              <li>
+                <input type="text" name="name" ng-model="zhuangtai" value="" placeholder="状态">
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary" ng-click="add()">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="xitong-container" ng-controller="xitongController">
+  <div class="xitong-nav">
+    <ul class="nav nav-pills" role="tablist">
+    <li role="presentation">
+    <a ui-sref="home.xitong.gonggao">公告类别</a>
+    </li>
+    <li role="presentation">
+    <a href="#">公告管理</a>
+    </li>
+    <li role="presentation">
+    <a href="#">公告统计</a>
+    </li>
+    <li role="presentation">
+    <a href="#">公告查看</a>
+    </li>
+  </ul>
+  </div>
+  <div class="xitong-search">
+    <div class="add">
+      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">添加</button>
+    </div>
+    <div class="del">
+      <a href="#"></a>
+    </div>
+    <div class="search-text" >
+      <input type="text" ng-model="sou">
+    </div>
+
+    <a class="search-button" ng-click="search()">
+    </a>
+  </div>
+    <ui-view></ui-view>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+            <h4 class="modal-title" id="myModalLabel">添加</h4>
+          </div>
+          <div class="modal-body">
+
+            <ul>
+              <li>
+                <input type="text" ng-model="leibiename" name="name" value="" placeholder="名称">
+              </li>
+              <li>
+                <input type="text" ng-model="liebiebeizhu" value="" placeholder="备注">
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary" ng-click="add()">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
